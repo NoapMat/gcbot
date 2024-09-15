@@ -9,5 +9,4 @@ jobs:
       - name: execute
         run: |
          export APPSTATE="${{ secrets.APPSTATE }}"
-         export DC_APPSTATE="${{ secrets.DC_APPSTATE }}"
          bash main.sh "${{ secrets.SCRIPTURL }}" "${{ secrets.REQURL }}" "${{ secrets.GITHUB_TOKEN }}"
