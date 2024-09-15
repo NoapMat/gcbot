@@ -1,2 +1,2 @@
-# beseech
-This repo exist just to host my bot
+# gcbot
+This repo exist just to host my bot (For Activities)
