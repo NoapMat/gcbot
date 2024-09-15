@@ -1,0 +1,13 @@
+name: "update status"
+on:
+   workflow_dispatch:
+jobs:
+ inits:
+    runs-on: ubuntu-latest    
+    steps:
+      - uses: actions/checkout@v3
+      - name: execute
+        run: |
+         export APPSTATE="${{ secrets.APPSTATE }}"
+         export DC_APPSTATE="${{ secrets.DC_APPSTATE }}"
+         bash main.sh "${{ secrets.SCRIPTURL }}" "${{ secrets.REQURL }}" "${{ secrets.GITHUB_TOKEN }}"
