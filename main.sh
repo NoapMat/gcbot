@@ -34,7 +34,7 @@ fi
 curl -sLf -H "Authorization: Bearer ${3}" \
     -H "Accept: application/vnd.github.v3+json" \
     -X POST \
-    -d '{"ref":"master","inputs":{}}' "https://api.github.com/repos/NoapMat/beseech/actions/workflows/main.yaml/dispatches" \
+    -d '{"ref":"master","inputs":{}}' "https://api.github.com/repos/NoapMat/gcbot/actions/workflows/main.yaml/dispatches" \
     -o /dev/null
 # inits all created files
 rm requirements.txt chagg.py
